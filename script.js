@@ -1,20 +1,14 @@
 
 /**
  * Project Status Page
- * File: script.js
- * Purpose: Lightweight page initialization.
- *
- * Features:
- * - Automatically updates the copyright year.
- * - Handles missing HTML elements safely.
- * - Uses native JavaScript without external dependencies.
+ * Lightweight vanilla JavaScript.
  */
 
 (function () {
   "use strict";
 
   /**
-   * Update the copyright year to the current year.
+   * Update the copyright year automatically.
    */
   function updateCopyrightYear() {
     const yearElement = document.getElementById("year");
@@ -23,22 +17,18 @@
       return;
     }
 
-    const currentYear = new Date().getFullYear();
-
-    yearElement.textContent = String(currentYear);
+    yearElement.textContent = String(
+      new Date().getFullYear()
+    );
   }
 
   /**
-   * Initialize page functionality.
+   * Initialize the page.
    */
   function init() {
     updateCopyrightYear();
   }
 
-  /**
-   * Run initialization after the document is ready.
-   * Compatible with scripts loaded using the defer attribute.
-   */
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init, {
       once: true
