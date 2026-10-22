@@ -1,170 +1,133 @@
 
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="id">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="theme-color" content="#f6f4ef">
+  <meta name="theme-color" content="#f8f8f5">
   <meta
     name="description"
-    content="This project is temporarily under maintenance while we make improvements. Please check back soon."
-  >
-  <meta name="robots" content="index, follow">
-
-  <title>Coming Soon — Project in Progress</title>
-
-  <!-- Performance: connect to Google Fonts early -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
+    content="Website ini masih dalam proses pengembangan. Kami sedang menyempurnakan fitur dan tampilannya agar siap digunakan."
   >
 
-  <!-- Typography -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sedang Dikembangkan">
+  <meta
+    property="og:description"
+    content="Website ini sedang disiapkan. Silakan kembali lagi nanti."
   >
 
-  <!-- Main stylesheet -->
+  <title>Sedang Dikembangkan — Fadhail</title>
+
   <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
 </head>
 
 <body>
   <main class="page">
 
-    <!-- Header -->
-    <nav class="topbar" aria-label="Main navigation">
-      <a
-        class="wordmark"
-        href="./"
-        aria-label="Project status home"
-      >
-        <span class="mark" aria-hidden="true">✳</span>
+    <header class="header">
+      <a class="brand" href="./" aria-label="Halaman utama">
+        <span class="brand-mark" aria-hidden="true">✳</span>
         <span>IN PROGRESS</span>
       </a>
 
-      <span class="top-status">
+      <div class="header-status">
         <span class="status-dot" aria-hidden="true"></span>
-        <span>Building something better</span>
-      </span>
-    </nav>
+        <span>Sedang dikembangkan</span>
+      </div>
+    </header>
 
-    <!-- Main content -->
     <section class="hero" aria-labelledby="page-title">
 
       <div class="eyebrow">
         <span class="eyebrow-line" aria-hidden="true"></span>
-        <span>A LITTLE WORK IN PROGRESS</span>
+        <span>SEBUAH KARYA YANG SEDANG DISIAPKAN</span>
       </div>
 
       <h1 id="page-title">
-        Good things<br>
-        take <span>time.</span>
+        Website ini<br>
+        sedang <span>disiapkan.</span>
       </h1>
 
-      <p class="intro">
-        This corner of the internet is getting a little care and
-        attention. The project isn’t ready to meet the world just yet,
-        but I’m working on it.
+      <p class="description">
+        Website ini masih dalam proses pengembangan. Saya sedang
+        menyempurnakan fitur dan tampilannya agar siap digunakan.
+        Silakan kembali lagi nanti.
       </p>
 
-      <!-- Project status card -->
-      <section
-        class="status-card"
-        aria-labelledby="status-heading"
-      >
-        <div class="status-icon" aria-hidden="true">
+      <div class="status-section">
+        <div class="status-symbol" aria-hidden="true">
           <svg
             viewBox="0 0 48 48"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <rect
-              x="7"
-              y="10"
-              width="34"
-              height="27"
+              x="6.75"
+              y="9.75"
+              width="34.5"
+              height="28.5"
               rx="5"
               stroke="currentColor"
-              stroke-width="1.8"
+              stroke-width="1.7"
             />
 
             <path
-              d="M7 17h34"
+              d="M7 17.25H41"
               stroke="currentColor"
-              stroke-width="1.8"
+              stroke-width="1.7"
             />
 
-            <circle
-              cx="13"
-              cy="13.5"
-              r="1"
-              fill="currentColor"
-            />
-
-            <circle
-              cx="17"
-              cy="13.5"
-              r="1"
-              fill="currentColor"
-            />
+            <circle cx="12.5" cy="13.5" r="1" fill="currentColor"/>
+            <circle cx="16.5" cy="13.5" r="1" fill="currentColor"/>
 
             <path
-              d="m19 27 4 4 7-8"
+              d="M19 27L23 31L30 23"
               stroke="currentColor"
-              stroke-width="2"
+              stroke-width="1.9"
               stroke-linecap="round"
               stroke-linejoin="round"
             />
           </svg>
         </div>
 
-        <div class="status-copy">
-          <span class="label">CURRENT STATUS</span>
-
-          <h2 id="status-heading">
-            Under maintenance
-          </h2>
-
-          <p>
-            I’m polishing the details before the public launch.
-          </p>
+        <div class="status-content">
+          <span class="status-label">STATUS WEBSITE</span>
+          <h2>Sedang Dikembangkan</h2>
+          <p>Fitur dan tampilan sedang disempurnakan.</p>
         </div>
 
-        <span class="pill">
+        <span class="status-badge">
           <span class="status-dot" aria-hidden="true"></span>
-          In progress
+          Dalam proses
         </span>
-      </section>
+      </div>
 
-      <!-- Closing message -->
-      <div class="bottom-note">
-        <span class="note-star" aria-hidden="true">✳</span>
-
+      <div class="availability">
+        <span class="availability-icon" aria-hidden="true">↗</span>
         <p>
-          Thanks for stopping by.<br>
-          <strong>Please check back soon.</strong>
+          <span>Demo</span>
+          <strong>Belum tersedia untuk publik</strong>
+        </p>
+      </div>
+
+      <div class="closing-note">
+        <span class="closing-mark" aria-hidden="true">✳</span>
+        <p>
+          Terima kasih sudah berkunjung.<br>
+          <strong>Sampai jumpa dalam waktu dekat.</strong>
         </p>
       </div>
 
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
-      <span>Made with care, by Fadhail.</span>
-
-      <span>
-        © <span id="year">2026</span>
-        · All in good time
-      </span>
+      <span>Dibuat oleh <strong>Fadhail.</strong></span>
+      <span>&copy; <span id="year">2026</span></span>
     </footer>
 
   </main>
-
-  <!-- Automatically update the copyright year -->
-  <script src="./script.js" defer></script>
 </body>
 </html>
